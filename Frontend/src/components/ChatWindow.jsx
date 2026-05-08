@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import Typewriter from "typewriter-effect";
 
 const MessageContent = ({ content }) => {
   return (
@@ -162,6 +163,7 @@ const ChatWindow = ({ messages, loading }) => {
                   <div className="break-words">
                     <MessageContent content={msg.content} />
                   </div>
+                  
                 </div>
               </div>
             </div>
