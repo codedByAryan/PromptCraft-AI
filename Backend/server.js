@@ -29,7 +29,7 @@ app.use(cors({
   credentials: true,
 }));
 
-app.options("*", cors()); // ✅ handles preflight requests
+
 
 app.use(express.json());
 
