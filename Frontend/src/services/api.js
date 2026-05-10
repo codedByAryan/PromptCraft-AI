@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://promptcraft-ai-backend-6dwa.onrender.com/api",
+  baseURL: "https://promptcraft-ai-backend-t15j.onrender.com/api",
 });
 
 API.interceptors.request.use((config) => {
