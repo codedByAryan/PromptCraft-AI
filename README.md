@@ -4,10 +4,6 @@ A ChatGPT-inspired AI chat interface built using the MERN stack, with added util
 
 The goal of PromptCraft AI is to provide a seamless, intelligent chat experience that goes beyond a basic wrapper around an LLM API — it actively improves the quality of what the user is asking.
 
-## 🔗 Live Demo
-
-[Add your deployed link here, or note "Not deployed yet — run locally" if it isn't hosted]
-
 ## 🌟 Key Features
 
 - **Secure Authentication** — full registration/login flow to keep chats private
