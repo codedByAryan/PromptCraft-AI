@@ -1,45 +1,42 @@
-🚀 PromptCraft AI – Intelligent Chat Application
-Hi there! 👋 I'm a Computer Science student passionate about building full-stack applications. This project is a ChatGPT-inspired AI chat interface built using the MERN stack.
+# 🚀 PromptCraft AI – Intelligent Chat Application
 
-The goal of PromptCraft AI is to provide a seamless, intelligent chat experience with added utilities like prompt enhancement and automatic language translation/refinement.
+A ChatGPT-inspired AI chat interface built using the MERN stack, with added utilities like prompt enhancement and automatic language translation/refinement.
 
-🌟 Key Features
-🔐 Secure Authentication: Full user flow with Registration and Login to keep your chats private.
+The goal of PromptCraft AI is to provide a seamless, intelligent chat experience that goes beyond a basic wrapper around an LLM API — it actively improves the quality of what the user is asking.
 
-💬 Modern Chat Interface: A sleek, responsive UI that mimics the ChatGPT experience for a familiar feel.
+## 🔗 Live Demo
 
-🧠 Brains by OpenRouter: Integrated with OpenRouter API to fetch high-quality AI responses.
+[Add your deployed link here, or note "Not deployed yet — run locally" if it isn't hosted]
 
-✨ Smart Prompt Enhancer: Includes a custom feature that takes "lazy" prompts and expands them into detailed, high-quality instructions for the AI.
+## 🌟 Key Features
 
-🌐 Language Bridge: Automatically converts Hindi or Hinglish prompts into professional English to ensure the AI provides the most accurate results.
+- **Secure Authentication** — full registration/login flow to keep chats private
+- **Modern Chat Interface** — a responsive UI similar to the ChatGPT experience
+- **Powered by OpenRouter** — integrated with the OpenRouter API to access multiple LLMs
+- **Smart Prompt Enhancer** — takes vague or "lazy" prompts and expands them into detailed, high-quality instructions before sending them to the AI
+- **Language Bridge** — automatically converts Hindi or Hinglish prompts into professional English for more accurate AI responses
+- **Persistent Memory** — chat history is stored in MongoDB, so conversations survive a page refresh
+- **Chat Management** — sidebar for organizing multiple chat sessions, with the ability to delete old conversations
+- **Responsive Design** — built with Tailwind CSS, works cleanly across desktop and mobile
 
-📜 Persistent Memory: Your conversations aren't lost on refresh. All chat history is stored securely in MongoDB.
+## 🛠️ Tech Stack
 
-🗂️ Chat Management: Easily organize your thoughts with a sidebar for multiple chat sessions and the ability to delete old conversations.
+**Frontend**
+- React.js — dynamic, reactive UI
+- Tailwind CSS — utility-first styling
+- Axios — API requests to the backend
 
-🎨 UI/UX: Built with Tailwind CSS for a clean, modern look with smooth scrolling and mobile responsiveness.
+**Backend**
+- Node.js & Express.js — server-side logic and routing
+- MongoDB & Mongoose — storing user profiles and chat threads
 
-🛠️ Tech Stack
-Frontend
-React.js: For building a dynamic and reactive user interface.
+**AI & Auth**
+- OpenRouter API — access to multiple LLMs
+- JWT (JSON Web Tokens) — secure user authentication
 
-Tailwind CSS: For styling with a utility-first approach.
+## 📂 Project Structure
 
-Axios: For handling API requests to the backend.
-
-Backend
-Node.js & Express.js: Powering the server-side logic and API routing.
-
-MongoDB & Mongoose: NoSQL database used to store user profiles and chat threads.
-
-AI & Integration
-OpenRouter API: Providing access to various LLMs.
-
-JWT (JSON Web Tokens): Used for secure user authentication.
-
-📂 Project Structure
-Plaintext
+```
 PromptCraft-AI/
 ├── backend/
 │   ├── models/        # Mongoose schemas (User, Chat)
@@ -48,49 +45,61 @@ PromptCraft-AI/
 │   └── server.js      # Entry point
 ├── frontend/
 │   ├── src/
-│   │   ├── components/# Reusable UI elements (Sidebar, Message, Input)
-│   │   ├── pages/     # Login, Register, Chat Dashboard
-│   │   └── App.js     # Routing and State management
+│   │   ├── components/ # Reusable UI elements (Sidebar, Message, Input)
+│   │   ├── pages/       # Login, Register, Chat Dashboard
+│   │   └── App.js       # Routing and state management
 └── README.md
-🚀 Getting Started
-To get this project running locally, follow these steps:
+```
 
-1. Clone the repository
-Bash
-git clone https://github.com/your-username/PromptCraft-AI.git
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/codedByAryan/PromptCraft-AI.git
 cd PromptCraft-AI
-2. Backend Setup
-Navigate to the backend folder.
+```
 
-Create a .env file and add your MONGO_URI, JWT_SECRET, and OPENROUTER_API_KEY.
+### 2. Backend Setup
+```bash
+cd backend
+npm install
+```
+Create a `.env` file in `backend/` with:
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+OPENROUTER_API_KEY=your_openrouter_api_key
+```
+Then run:
+```bash
+npm start
+```
 
-Run npm install and then npm start.
+### 3. Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
 
-3. Frontend Setup
-Navigate to the frontend folder.
+## 📸 Screenshots
 
-Run npm install.
+<p align="center">
+  <img src="screenshots/chat-dashboard.png" width="45%" alt="Chat Dashboard" />
+  <img src="screenshots/login.png" width="45%" alt="Login Page" />
+</p>
 
-Run npm start to launch the application in your browser.
+## 📝 What I Learned Building This
 
-📝 Learning Outcomes
-Building this project helped me master:
+- Managing complex, real-time state in React for live chat updates
+- Implementing secure authentication flows in a MERN environment
+- Integrating a third-party AI API and structuring prompts to get better model output
+- Designing NoSQL schemas for relational-feeling data (users to chats) in MongoDB
 
-Managing complex state in React (handling real-time chat updates).
+## 🤝 Contact
 
-Implementing secure Authentication flows in a MERN environment.
+**Aryan Chauhan**
+Galgotias University — Full-Stack Web Development (MERN) | Java DSA
+GitHub: https://github.com/codedByAryan
 
-Integrating third-party AI APIs and structuring prompts for better output.
-
-Designing database schemas that handle relational data (Users to Chats) in a NoSQL database.
-
-🤝 Contact
-If you have any questions or just want to talk about Web Dev/AI, feel free to reach out!
-
-Name: Aryan Chauhan
-
-University: Galgotias University
-
-Focus: Full-Stack Web Development (MERN) | Java DSA
-
-If you liked this project, feel free to ⭐ the repo!
+If you find this project useful, feel free to ⭐ the repo!
